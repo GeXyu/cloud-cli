@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka/
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/GeXyu/example/
+          username: 861719405@qq.com
+          password: gxy1997
+          # basedir: /Users/admin/code/myProjects/java/imooc/SpringCloud_Sell/config/basedir
+server:
+  port: 1020

@@ -1,0 +1,10 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka/
+spring:
+  application:
+    name: sleuth
+server:
+  port: 1040
+
