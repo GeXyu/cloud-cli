@@ -86,5 +86,6 @@
 		<module>cloud-cli-monitor</module>
 	<module>cloud-cli-user</module>
     <module>cloud-cli-pay</module>
+    <module>cloud-cli-modules</module>
   </modules>
 </project>
