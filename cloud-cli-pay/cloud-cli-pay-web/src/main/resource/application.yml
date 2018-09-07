@@ -1,9 +1,0 @@
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:1010/eureka/
-spring:
-  application:
-    name: pay
-server:
-  port: 1070

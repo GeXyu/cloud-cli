@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.zzcode</groupId>
@@ -84,8 +86,5 @@
 		<module>cloud-cli-router</module>
 		<module>cloud-cli-sleuth</module>
 		<module>cloud-cli-monitor</module>
-	<module>cloud-cli-user</module>
-    <module>cloud-cli-pay</module>
-    <module>cloud-cli-modules</module>
-  </modules>
+	</modules>
 </project>
