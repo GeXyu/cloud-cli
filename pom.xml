@@ -86,5 +86,6 @@
 		<module>cloud-cli-router</module>
 		<module>cloud-cli-sleuth</module>
 		<module>cloud-cli-monitor</module>
+		<module>cloud-cli-modules</module>
 	</modules>
 </project>
