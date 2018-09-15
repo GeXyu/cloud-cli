@@ -7,4 +7,12 @@ spring:
     name: pay
 server:
   port: 1070
-
+feign:
+   hystrix:
+      enabled: true
+hystrix:
+   command:
+      default:
+         execution:
+            timeout:
+               enabled: true

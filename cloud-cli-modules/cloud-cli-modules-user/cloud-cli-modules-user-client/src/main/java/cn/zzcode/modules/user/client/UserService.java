@@ -26,10 +26,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @modified [who date description]
  * @check [who date description]
  */
-@FeignClient(value = "user")
+// 如果用failback的方式，会有mapping的重复的问题
+@FeignClient(value = "user", fallbackFactory = UserServiceFullBackFactory.class)
 @RequestMapping("user")
 public interface UserService {
 
+    // @HystrixCommand()
     @RequestMapping("test")
     public String test();
 
