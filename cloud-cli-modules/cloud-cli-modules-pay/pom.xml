@@ -24,7 +24,6 @@
 	</dependencies>
 	<modules>
 		<module>cloud-cli-modules-pay-web</module>
-		<module>cloud-cli-modules-pay-api</module>
 		<module>cloud-cli-modules-pay-service</module>
 	</modules>
 </project>

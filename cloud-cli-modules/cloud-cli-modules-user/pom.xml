@@ -23,7 +23,6 @@
 	</dependencies>
 	<modules>
 		<module>cloud-cli-modules-user-web</module>
-		<module>cloud-cli-modules-user-api</module>
 		<module>cloud-cli-modules-user-client</module>
 	</modules>
 </project>
