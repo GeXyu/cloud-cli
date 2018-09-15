@@ -28,7 +28,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @check [who date description]
  */
 @SpringBootApplication
-@ComponentScan(basePackages = { "cn.zzcode.modules.user" })
+@ComponentScan(basePackages = { "cn.zzcode.modules.user" }) // 加载引入client的jar文件
 public class PayServiceAppliaction {
 
     public static void main(String[] args) {
