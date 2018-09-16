@@ -11,10 +11,13 @@
 package cn.zzcode.modules.user.web;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
+import cn.zzcode.modules.auth.AuthAppliaction;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
@@ -34,9 +37,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @modified [who date description]
  * @check [who date description]
  */
-@SpringBootApplication
-@EnableDiscoveryClient
 @EnableSwagger2
+@EnableDiscoveryClient
+@ComponentScan(basePackages = { "cn.zzcode.modules.auth", "cn.zzcode.modules.user" }) // 加载引入client的jar文件
+@SpringBootApplication(exclude = { AuthAppliaction.class })
+@EnableAutoConfiguration
 public class UserApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserApplication.class, args);

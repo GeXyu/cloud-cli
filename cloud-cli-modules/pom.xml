@@ -14,6 +14,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cloud.cli.version>0.0.1-SNAPSHOT</cloud.cli.version>
 	</properties>
 
 	<dependencies>
@@ -23,5 +24,6 @@
 	<modules>
 		<module>cloud-cli-modules-user</module>
 		<module>cloud-cli-modules-pay</module>
+		<module>cloud-cli-modules-auth</module>
 	</modules>
 </project>
