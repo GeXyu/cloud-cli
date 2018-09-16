@@ -10,6 +10,7 @@
  */
 package cn.zzcode.modules.user.web.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,9 +31,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("user")
 public class UserController {
 
+    @Value("${info.profile:error}")
+    private String name;
+
     @RequestMapping("test")
     public String test() {
         System.out.println("user controller test ");
+        System.out.println("config : " + name);
         return "TEST";
     }
 

@@ -14,6 +14,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -37,6 +38,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @modified [who date description]
  * @check [who date description]
  */
+@RefreshScope
 @EnableSwagger2
 @EnableDiscoveryClient
 @ComponentScan(basePackages = { "cn.zzcode.modules.auth", "cn.zzcode.modules.user" }) // 加载引入client的jar文件

@@ -7,11 +7,13 @@ spring:
     name: config
   cloud:
     config:
+      label: master
       server:
         git:
           uri: https://github.com/GeXyu/example/
           username: 861719405@qq.com
           password: gxy1997
-          # basedir: /Users/admin/code/myProjects/java/imooc/SpringCloud_Sell/config/basedir
+          #search-paths: config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
+          # basedir: /Users/admin/code/myProjects/java/imooc/SpringCloud_Sell/config/basedir //本地缓存地址
 server:
   port: 1020
